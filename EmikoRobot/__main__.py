@@ -83,22 +83,22 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+🤖 Saya Adalah Lanzi Robot [✨](https://telegra.ph/Lanzi-Robot-03-28)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
-✪ Hit /help to see my available commands.
+🖋 Ketik /help Untuk Melihat Perintah.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Emiko Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="🤖 Lanzi Robot 🤖", callback_data="lanzi_robot"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="Join Channel", url=f"t.me/Vylanesu
         ),
     ],
     [
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
+            f"👋 Hi, Saya {dispatcher.bot.first_name}. Terimakasih Telah menambahkan Bot ini Support owner - @pilannnn Join Channel - @Vylanesu.",
             parse_mode=ParseMode.HTML
        )
 
